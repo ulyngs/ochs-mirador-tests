@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello! I'm Mirador </title>
+    <meta charset="utf-8">
+    
+    <!-- import the Mirador viewer -->
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+  </head>  
+  <body>
+
+    <div id="mirador1"></div>
+
+    <script type="text/javascript">
+      // https://github.com/ProjectMirador/mirador/blob/master/src/config/settings.js
+      
+      
+      const mirador = Mirador.viewer({
+        id: "mirador1",
+        
+        // Look you can open up Mirador with windows!!
+        windows: [
+          {
+            manifestId: 'https://purl.stanford.edu/dy727pk7274/iiif/manifest'
+          },
+        ]
+      });
+    </script>
+  </body>
+</html>
+
